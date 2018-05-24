@@ -111,6 +111,13 @@ def doubler(list1, list2):
     #    TIME ESTIMATE:   5 minutes.
     # ------------------------------------------------------------------
 
+    for k in range(len(list1)):
+        list1[k] = list1[k] * 2
+
+    list3 = []
+    for k in range(len(list2)):
+        list3 = list3 + [list2[k] * 2]
+    return list3
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

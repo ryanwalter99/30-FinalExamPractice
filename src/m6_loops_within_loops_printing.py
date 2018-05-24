@@ -88,6 +88,14 @@ def shape(r):
     #    TIME ESTIMATE:  15 minutes.
     # ------------------------------------------------------------------
 
+    for k in range(r):
+        print(" " * k, end="")
+        for x in range(r - k):
+            print("+", end="")
+        print("!", end="")
+        for a in range(r - k, 0, -1):
+            print(a, end="")
+        print("-" * k)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
